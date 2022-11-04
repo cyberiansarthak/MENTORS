@@ -36,13 +36,28 @@
             background-color: black;
             color: white;
         }
+        .img2{
+            align-items: center;
+        }
+        .fixedall{
+            position: absolute;
+            left: 300px;
+            top: 900px;
+        }
 
 
     </style>
 </head>
 <body>
     <div id="start"> <h1>WELCOME TO MENTORS MENTEES GROUP</h1><button id="togglebutton">show qr code</button><div id="img"></div>  </div>
-   <img  src="Screenshot 2022-11-04 101258.jpg">
+    <div  class="fixedall">
+   <img  src="Screenshot 2022-11-04 101258.jpg" alt="img" class="img2">
+   <img  src="Screenshot 2022-11-04 101748.jpg" alt="img" class="img2">
+   <img  src="Screenshot 2022-11-04 101814.jpg" alt="img" class="img2">
+   <img  src="Screenshot 2022-11-04 101834.jpg" alt="img" class="img2">
+   <img  src="Screenshot 2022-11-04 101913.jpg" alt="img" class="img2">
+</div>
+   
     <script>
  document.getElementById("togglebutton").onclick = function(){
     document.getElementById("img").innerHTML= "<img src='WhatsApp Image 2022-11-03 at 7.49.33 PM (1).jpeg' alt='img' class='img' width='300px' height='500px' >";
