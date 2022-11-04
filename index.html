@@ -10,22 +10,45 @@
             margin: 0;
             padding: 0;
         }
-        .start{
+        #start{
+            text-align: center;
             width: 100%;
             height: 100vh;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .img{
+           
+           margin-top: 50px;
+           
+        }
+        #togglebutton{
+            border-radius: 5px;
+            border: 2px solid black;
+            color: black;
+            background-color: white;
+            height: 30px;
+            align-items: center;
+            padding: 3px;
+            font-weight: 700;
+
+        }
+        #togglebutton:hover{
+            background-color: black;
+            color: white;
         }
 
 
     </style>
 </head>
 <body>
-    <div class="start"> <h1>WELCOME TO MENTORS MENTEE GROUP</h1></div>
-     <img src="">
+    <div id="start"> <h1>WELCOME TO MENTORS MENTEES GROUP</h1><button id="togglebutton">show qr code</button><div id="img"></div>  </div>
+    
 
     <script>
-       document.getElementById("")
-
+ document.getElementById("togglebutton").onclick = function(){
+    document.getElementById("img").innerHTML= "<img src='WhatsApp Image 2022-11-03 at 7.49.33 PM (1).jpeg' alt='img' class='img' width='300px' height='500px' >";
+        document.getElementById("start").style="background-color:#009a78";
+ }
     </script>
     
 </body>
